@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Activity3">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                   HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="150"/>
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <BoxView Color="Green"/>
+                <Label Text="Green" 
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                
+                <BoxView Grid.Column="1" 
+                         Color="Yellow"/>
+                <Label Grid.Column="1" 
+                       Text="Yellow" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"/>
+
+                <BoxView Grid.Row="1" 
+                         Color="Teal"/>
+                <Label Grid.Row="1"
+                       Text="Teal"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+                <BoxView Grid.Row="1"
+                         Grid.Column="1" 
+                         Color="Purple"/>
+                <Label Grid.Row="1"
+                       Grid.Column="1" 
+                       Text="Purple"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+                <BoxView Grid.Row="2"
+                         Color="Blue"/>
+                
+                <BoxView Grid.Row="3"
+                         Color="Pink"/>
+
+                <BoxView Grid.Row="2" 
+                         Grid.RowSpan="2"
+                         Grid.Column="1"
+                         Color="Black"/>
+
+                <BoxView Grid.Row="4" Grid.ColumnSpan="2"
+                         Color="Gray"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

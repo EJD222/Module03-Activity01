@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Activity2">
+    <ContentPage.Content>
+        <StackLayout Margin="25"> 
+            <Label Text="Welcome to StackLayout Activity!"
+                HorizontalOptions="CenterAndExpand" />
+
+            <Frame BorderColor="Black" Padding="10">
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <BoxView Color="Green"/>
+                    <Label Text="Green" FontSize="Large"/>
+                    <Entry Placeholder="Username"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BorderColor="Black" Padding="10">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="image.jpg" 
+                           WidthRequest="{OnPlatform iOS=100, Android=50}"/>
+                    <Label Text="Juan Dela Cruz" FontSize="Large"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

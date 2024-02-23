@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.ImagePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Image Page!"
+                HorizontalOptions="CenterAndExpand" />
+            
+            <Image Source="image.jpg" 
+                   Aspect="AspectFill"
+                   HeightRequest="{OnPlatform iOS=400, Android=200}"/>
+            <Image Source="https://i.gifer.com/qh.gif" 
+                   IsAnimationPlaying="True"
+                   Aspect="AspectFill"
+                   HeightRequest="{OnPlatform iOS=400, Android=200}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
